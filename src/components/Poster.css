@@ -1,0 +1,32 @@
+.poster-hero {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 0;
+}
+
+.poster-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.poster-overlay {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.poster-week {
+  font-size: 0.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
