@@ -9,7 +9,7 @@ function App() {
         <Poster />
       </main>
       <aside className="app-ad-band" aria-label="Publicidad">
-        <AdSense client="ca-pub-1893344905381073" slot="REEMPLAZAR_CON_TU_AD_SLOT" />
+        <AdSense client="ca-pub-1893344905381073" slot="8808330165" />
       </aside>
     </div>
   )

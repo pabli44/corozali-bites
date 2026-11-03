@@ -29,7 +29,13 @@ El poster actual usa `position: fixed; inset: 0` y `object-fit: contain`, lo que
 - [x] 7. Ajustar `src/App.tsx` para incluir `AdSense` en la banda inferior.
 - [x] 8. Limpiar la configuración de publicidad manual en `src/data/config.ts`.
 - [x] 9. Verificar `npm run build` y `npm run lint`.
-- [ ] 10. Hacer work-unit commit con Conventional Commit.
+- [x] 10. Hacer work-unit commit con Conventional Commit.
+
+## Evidencia
+- Rama: `feature/adsense-integration`
+- Commit: `1b1c2de`
+- Build: `npm run build` OK
+- Lint: `npm run lint` OK
 
 ## Criterios de aceptación
 - `AdBanner` ya no existe en el repo.
@@ -46,3 +52,4 @@ El poster actual usa `position: fixed; inset: 0` y `object-fit: contain`, lo que
 ## Notas
 - No se elimina `src/data/config.ts` completamente porque `currentPoster` sigue usándose.
 - Se conserva `public/images/ad-placeholder.svg` por si se quiere revertir; se puede borrar después si no se usa.
+- Slot de AdSense actualizado a `8808330165` (unidad "AdsenseCorozaliVites").
