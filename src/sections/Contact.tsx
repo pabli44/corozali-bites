@@ -23,24 +23,16 @@ export default function Contact() {
           <div className="contact-card">
             <h3 className="contact-card-title">Horarios</h3>
             <ul className="contact-hours">
-              {contactInfo.hours.map((line, index) => (
-                <li key={index}>{line}</li>
-              ))}
+              Todos los Domingos!
             </ul>
           </div>
 
           <div className="contact-card">
             <h3 className="contact-card-title">Reservas y pedidos</h3>
             <p>
-              Teléfono:{ ' ' }
+              Whatsapp:{ ' ' }
               <a className="contact-link" href={`tel:${contactInfo.phone.replace(/\D/g, '')}`}>
                 {contactInfo.phone}
-              </a>
-            </p>
-            <p>
-              Correo:{ ' ' }
-              <a className="contact-link" href={`mailto:${contactInfo.email}`}>
-                {contactInfo.email}
               </a>
             </p>
           </div>
