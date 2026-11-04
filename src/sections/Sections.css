@@ -330,16 +330,26 @@
 }
 
 .contact-link {
-  display: inline-block;
-  margin-top: 0.75rem;
-  color: #8c6b4a;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-left: -0.5rem;
+  color: #6b4a2a;
   font-weight: 600;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .contact-link:hover,
 .contact-link:focus-visible {
   text-decoration: underline;
+}
+
+.contact-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
 /* ============================================================================
@@ -362,6 +372,7 @@
   align-items: center;
   justify-content: center;
   min-width: 120px;
+  min-height: 44px;
   padding: 0.75rem 1.25rem;
   border-radius: 999px;
   background: var(--card-bg);
@@ -376,6 +387,22 @@
 .social-link:focus-visible {
   background: #fff;
   transform: translateY(-2px);
+}
+
+.social-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-link {
+    transition: none;
+  }
+
+  .social-link:hover,
+  .social-link:focus-visible {
+    transform: none;
+  }
 }
 
 /* ============================================================================

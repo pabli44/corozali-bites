@@ -43,6 +43,7 @@ export default function AdSense({
       data-ad-slot={slot}
       data-ad-format={format}
       data-full-width-responsive={responsive ? 'true' : 'false'}
+      aria-label="Publicidad"
     />
   )
 }

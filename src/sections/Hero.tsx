@@ -9,7 +9,7 @@ export default function Hero() {
         <Poster poster={currentPoster} />
       </div>
       <div className="hero-tagline">
-        <p id="hero-title" className="hero-title">{brandTagline}</p>
+        <h1 id="hero-title" className="hero-title">{brandTagline}</h1>
         <p className="hero-subtitle">Comida latina con alma caribeña, preparada cada día con ingredientes frescos.</p>
       </div>
     </section>

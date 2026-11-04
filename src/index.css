@@ -4,6 +4,8 @@
   --bg: #ece6dc;
   --card-bg: #f7f4ef;
   --border: #e0d9ce;
+  --focus-ring: #8c6b4a;
+  --focus-ring-offset: #fff;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -37,4 +39,29 @@ p {
 
 img {
   max-width: 100%;
+}
+
+a,
+button,
+[tabindex]:not([tabindex='-1']) {
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:not([tabindex='-1']):focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
