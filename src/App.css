@@ -4,17 +4,3 @@
   min-height: 100vh;
   min-height: 100dvh;
 }
-
-.app-poster-stage {
-  position: relative;
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow: hidden;
-}
-
-.app-ad-band {
-  flex: 0 0 auto;
-  height: 90px;
-  background: rgba(247, 244, 239, 0.96);
-  border-top: 1px solid rgba(224, 217, 206, 0.4);
-}
