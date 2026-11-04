@@ -25,23 +25,29 @@ Hoy el sitio solo muestra un poster semanal y una banda de AdSense. Eso es conte
 - Usar solo React + CSS; no agregar dependencias nuevas.
 
 ## Tareas
-- [ ] 1. Extender tipos y datos en `src/data/config.ts` (menú, ofertas, testimonios, contacto, redes).
-- [ ] 2. Crear `src/sections/Hero.tsx` con el poster actual y un lema breve.
-- [ ] 3. Crear `src/sections/About.tsx` con historia del local.
-- [ ] 4. Crear `src/sections/Menu.tsx` con categorías y tarjetas de productos.
-- [ ] 5. Crear `src/sections/Offers.tsx` con oferta actual y posters anteriores.
-- [ ] 6. Crear `src/sections/Testimonials.tsx` con opiniones de clientes.
-- [ ] 7. Crear `src/sections/Contact.tsx` con dirección, horarios y mapa/ubicación textual.
-- [ ] 8. Crear `src/sections/Social.tsx` con links a redes.
-- [ ] 9. Reorganizar `src/App.tsx` para componer todas las secciones y ubicar AdSense entre contenido.
-- [ ] 10. Ajustar estilos globales y crear `src/sections/Sections.css` para el layout responsive.
-- [ ] 11. Verificar `npm run build` y `npm run lint`.
-- [ ] 12. Hacer work-unit commit con Conventional Commit.
+- [x] 1. Extender tipos y datos en `src/data/config.ts` (menú, ofertas, testimonios, contacto, redes).
+- [x] 2. Crear `src/sections/Hero.tsx` con el poster actual y un lema breve.
+- [x] 3. Crear `src/sections/About.tsx` con historia del local.
+- [x] 4. Crear `src/sections/Menu.tsx` con categorías y tarjetas de productos.
+- [x] 5. Crear `src/sections/Offers.tsx` con oferta actual y posters anteriores.
+- [x] 6. Crear `src/sections/Testimonials.tsx` con opiniones de clientes.
+- [x] 7. Crear `src/sections/Contact.tsx` con dirección, horarios y mapa/ubicación textual.
+- [x] 8. Crear `src/sections/Social.tsx` con links a redes.
+- [x] 9. Reorganizar `src/App.tsx` para componer todas las secciones y ubicar AdSense entre contenido.
+- [x] 10. Ajustar estilos globales y crear `src/sections/Sections.css` para el layout responsive.
+- [x] 11. Verificar `npm run build` y `npm run lint`.
+- [x] 12. Hacer work-unit commits con Conventional Commit.
 
 ## Evidencia
 - Rama: `feature/adsense-content-rich-landing`
-- Build: `npm run build` OK
-- Lint: `npm run lint` OK
+- Build: `npm run build` OK (sin errores ni advertencias)
+- Lint: `npm run lint` OK (oxlint sin salida = 0 problemas)
+- Commits:
+  - `1d4036a` docs(odd): add adsense content-rich landing task document
+  - `46b226b` feat(data): extend config with menu, offers, testimonials, contact and social data
+  - `c51493b` feat(sections): add Hero, About, Menu, Offers, Testimonials, Contact and Social sections
+  - `0ae84e8` feat(layout): compose rich landing and move AdSense into content flow
+- Diff total desde el anterior commit: 995 insertiones, 25 eliminaciones (~1 020 líneas cambiadas)
 
 ## Criterios de aceptación
 - El sitio tiene al menos 6 secciones de contenido editorial original.
