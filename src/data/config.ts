@@ -37,7 +37,6 @@ export interface SocialLink {
 
 export interface ContactInfo {
   address: string
-  hours: string[]
   phone: string
   email: string
   mapsUrl: string
@@ -230,15 +229,10 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const contactInfo: ContactInfo = {
-  address: 'Corozal, Sucre, Colombia (dirección exacta pendiente por confirmar)',
-  hours: [
-    'Miércoles a viernes: 11:00 a. m. – 8:00 p. m.',
-    'Sábados y domingos: 10:00 a. m. – 9:00 p. m.',
-    'Lunes y martes: cerrado',
-  ],
+  address: 'Cartagena- Bolivar',
   phone: '3012631318',
   email: 'hola@corozalibites.com (email de ejemplo — reemplazar por el real)',
-  mapsUrl: 'https://maps.google.com/?q=Corozal,+Sucre,+Colombia',
+  mapsUrl: 'https://maps.google.com/?q=Cartagena,+Bolivar,+Colombia',
 }
 
 export const socialLinks: SocialLink[] = [
@@ -246,11 +240,6 @@ export const socialLinks: SocialLink[] = [
     platform: 'Instagram',
     url: 'https://www.instagram.com/corozali/',
     label: 'Síguenos en Instagram',
-  },
-  {
-    platform: 'Facebook',
-    url: 'https://facebook.com/corozalibites',
-    label: 'Encuéntranos en Facebook',
   },
   {
     platform: 'WhatsApp',
