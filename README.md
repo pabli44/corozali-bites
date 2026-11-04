@@ -1,15 +1,38 @@
-# React + TypeScript + Vite
+# Corozali Bites
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page de Corozali Bites, un emprendimiento de comida latina/caribeña en Corozal, Puerto Rico. Construida con Vite, React y TypeScript.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 20 o superior
+- npm (incluido con Node.js)
 
-## React Compiler
+## Instalación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clona el repositorio e instala las dependencias:
+
+```bash
+npm install
+```
+
+## Scripts disponibles
+
+| Script | Descripción |
+|--------|-------------|
+| `npm run dev` | Inicia el servidor de desarrollo con Vite |
+| `npm run build` | Compila TypeScript y genera la versión de producción en `dist/` |
+| `npm run lint` | Ejecuta Oxlint sobre el código fuente |
+| `npm run preview` | Previsualiza la versión de producción localmente |
+
+## Configuración del negocio
+
+Los datos visibles del sitio (menú, horarios, contacto, redes sociales) viven en `src/data/config.ts`. Son datos de ejemplo realistas pensados para la revisión de AdSense; debes reemplazarlos por la información real del negocio antes de publicar.
+
+## SEO y accesibilidad
+
+- `index.html` usa `lang="es"`, meta descripción, Open Graph y JSON-LD de Schema.org (`Restaurant`).
+- Reemplaza las URLs placeholder (`https://corozalibites.com`) por el dominio real al deployar.
+- El contenido principal está envuelto en `<main>` con `id="main-content"` e incluye un *skip link* para navegación por teclado.
 
 ## Expanding the Oxlint configuration
 
@@ -30,3 +53,7 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Licencia
+
+Proyecto privado. Todos los derechos reservados.

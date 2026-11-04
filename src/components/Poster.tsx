@@ -1,8 +1,12 @@
-import { currentPoster } from '../data/config'
+import { currentPoster, type WeeklyPoster } from '../data/config'
 import './Poster.css'
 
-export default function Poster() {
-  const { image, title } = currentPoster
+interface PosterProps {
+  poster?: WeeklyPoster
+}
+
+export default function Poster({ poster = currentPoster }: PosterProps) {
+  const { image, title } = poster
 
   return (
     <div className="poster-hero">

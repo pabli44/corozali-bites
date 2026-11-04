@@ -1,0 +1,477 @@
+/* ============================================================================
+   Shared section layout
+   ============================================================================ */
+
+.section {
+  padding: 4rem 1.25rem;
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 0.75rem;
+  color: var(--text-h);
+}
+
+.section-lead {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* ============================================================================
+   Hero
+   ============================================================================ */
+
+.hero-section {
+  padding: 0;
+  background: var(--bg);
+}
+
+.hero-poster-wrapper {
+  position: relative;
+  width: 100%;
+  height: 62vh;
+  min-height: 320px;
+  max-height: 720px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.hero-tagline {
+  text-align: center;
+  padding: 1.75rem 1.25rem 2.5rem;
+  background: var(--bg);
+}
+
+.hero-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0 0 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+/* ============================================================================
+   About
+   ============================================================================ */
+
+.about-section {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ============================================================================
+   Menu
+   ============================================================================ */
+
+.menu-section {
+  background: var(--bg);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.menu-category {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.menu-category-title {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+  color: var(--text-h);
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.menu-item-name {
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.menu-item-price {
+  font-weight: 700;
+  color: var(--text-h);
+  white-space: nowrap;
+}
+
+.menu-item-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* ============================================================================
+   Offers
+   ============================================================================ */
+
+.offers-section {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.offer-current {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.offer-current-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-h);
+  margin: 0 0 1rem;
+}
+
+.offer-current-poster {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  height: 360px;
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.offer-current-description {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.offers-archive-title {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0 0 1.25rem;
+  color: var(--text-h);
+}
+
+.offers-archive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.offer-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.offer-card-poster {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: var(--bg);
+}
+
+.offer-card-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.offer-card-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text);
+  margin: 0 0 0.25rem;
+}
+
+.offer-card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  color: var(--text-h);
+}
+
+.offer-card-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--text);
+}
+
+/* ============================================================================
+   Testimonials
+   ============================================================================ */
+
+.testimonials-section {
+  background: var(--bg);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.testimonial-card {
+  margin: 0;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.testimonial-quote {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+  color: var(--text-h);
+}
+
+.testimonial-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.testimonial-role {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+/* ============================================================================
+   Contact
+   ============================================================================ */
+
+.contact-section {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.contact-card {
+  font-style: normal;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.contact-card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+  color: var(--text-h);
+}
+
+.contact-hours {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-left: -0.5rem;
+  color: #6b4a2a;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  text-decoration: underline;
+}
+
+.contact-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ============================================================================
+   Social
+   ============================================================================ */
+
+.social-section {
+  background: var(--bg);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  min-height: 44px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 120ms ease, background-color 120ms ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.social-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-link {
+    transition: none;
+  }
+
+  .social-link:hover,
+  .social-link:focus-visible {
+    transform: none;
+  }
+}
+
+/* ============================================================================
+   In-flow ad placement
+   ============================================================================ */
+
+.content-ad {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+.content-ad-inner {
+  min-height: 90px;
+  background: var(--card-bg);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ============================================================================
+   Responsive
+   ============================================================================ */
+
+@media (min-width: 640px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .hero-poster-wrapper {
+    height: 68vh;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .offers-archive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .section {
+    padding: 6rem 2rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offers-archive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
