@@ -1,10 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corozali</title>
+
+    <title>Corozali Bites — Comida latina en Corozal, Puerto Rico</title>
+    <meta
+      name="description"
+      content="Corozali Bites: sabor caribeño hecho en casa. Empanadas, mofongo, arroz con gandules, pernil, jugos naturales y postres en Corozal, Puerto Rico."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph: reemplazar las URLs placeholder por las reales al deployar -->
+    <meta property="og:title" content="Corozali Bites — Comida latina en Corozal, Puerto Rico" />
+    <meta
+      property="og:description"
+      content="Sabor caribeño hecho en casa. Empanadas, mofongo, arroz con gandules, pernil, jugos naturales y postres."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corozalibites.com" />
+    <meta property="og:image" content="https://corozalibites.com/images/poster.jpg" />
+    <meta property="og:locale" content="es_PR" />
+
+    <!-- JSON-LD: reemplazar los datos de ejemplo por la información real del negocio -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Corozali Bites",
+        "description": "Sabor caribeño hecho en casa. Empanadas, mofongo, arroz con gandules, pernil, jugos naturales y postres.",
+        "url": "https://corozalibites.com",
+        "image": "https://corozalibites.com/images/poster.jpg",
+        "telephone": "+17875550123",
+        "email": "hola@corozalibites.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Principal #123",
+          "addressLocality": "Corozal",
+          "addressRegion": "PR",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+            "opens": "11:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "10:00",
+            "closes": "21:00"
+          }
+        ],
+        "servesCuisine": ["Caribeña", "Latina", "Puertorriqueña"],
+        "priceRange": "$"
+      }
+    </script>
+
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893344905381073"
