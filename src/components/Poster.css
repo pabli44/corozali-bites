@@ -1,7 +1,7 @@
 .poster-hero {
   position: absolute;
   inset: 0;
-  background: var(--bg);
+  background: #d6752e;
   z-index: 0;
 }
 
