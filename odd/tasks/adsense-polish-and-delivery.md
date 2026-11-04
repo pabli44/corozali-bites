@@ -50,6 +50,12 @@ La landing ya tiene contenido editorial, pero aún le falta:
 - Rama: `feature/adsense-content-rich-landing`
 - Build: `npm run build` OK
 - Lint: `npm run lint` OK
+- Commits:
+  - `c81fb89` feat(seo): add meta tags, Open Graph and JSON-LD
+  - `9453e11` feat(a11y): add skip link, focus styles and landmarks
+  - `b7fdba3` docs(readme): translate README to Spanish
+  - `bf7765a` docs(pr): prepare PR description and delivery strategy
+  - `ee299c3` docs(odd): add adsense polish and delivery task document
 
 ## Criterios de aceptación
 - `index.html` tiene `lang="es"`, meta description, Open Graph y JSON-LD válido.
