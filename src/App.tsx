@@ -1,4 +1,5 @@
 import AdSense from './components/AdSense'
+import CookieBanner from './components/CookieBanner'
 import SkipLink from './components/SkipLink'
 import Hero from './sections/Hero'
 import About from './sections/About'
@@ -12,6 +13,7 @@ import './App.css'
 function App() {
   return (
     <div className="app-shell">
+      <CookieBanner />
       <SkipLink />
       <main id="main-content" className="main-content" role="main">
         <Hero />
@@ -26,6 +28,16 @@ function App() {
         <Testimonials />
         <Contact />
         <Social />
+        <footer className="site-footer">
+          <p>© 2026 Corozali Bites</p>
+          <nav aria-label="Información legal">
+            <a href="/privacidad.html">Política de privacidad</a>
+            <span aria-hidden="true">·</span>
+            <a href="/terminos.html">Términos y condiciones</a>
+            <span aria-hidden="true">·</span>
+            <a href="/privacidad.html#cookies">Cookies</a>
+          </nav>
+        </footer>
       </main>
     </div>
   )

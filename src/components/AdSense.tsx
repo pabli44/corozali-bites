@@ -24,7 +24,16 @@ export default function AdSense({
   format = 'auto',
   responsive = true,
 }: AdSenseProps) {
+  const consent =
+    typeof window !== 'undefined'
+      ? localStorage.getItem('cookieConsent')
+      : null
+
   useEffect(() => {
+    if (consent === 'denied') {
+      return
+    }
+
     try {
       if (window.adsbygoogle) {
         window.adsbygoogle.push({})
@@ -33,7 +42,11 @@ export default function AdSense({
       // AdSense is not available in development or is blocked by an ad blocker.
       // The slot stays empty in those cases.
     }
-  }, [])
+  }, [consent])
+
+  if (consent === 'denied') {
+    return null
+  }
 
   return (
     <ins

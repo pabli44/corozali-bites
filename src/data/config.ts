@@ -44,8 +44,8 @@ export interface ContactInfo {
 
 // =============================================================================
 // REAL BUSINESS DATA NOTICE
-// Prices, phone and Instagram reflect the real posters from Corozali.
-// Exact street address and email are still placeholders pending confirmation.
+// Prices, phone, Instagram and email reflect the real business data from Corozali.
+// Exact street address is still a placeholder pending confirmation.
 // =============================================================================
 
 export const currentPoster: WeeklyPoster = {
@@ -58,9 +58,9 @@ export const currentPoster: WeeklyPoster = {
 export const brandTagline = 'Sabor caribeño hecho en casa'
 
 export const aboutStory: string[] = [
-  'Corozali Bites nació en 2023 en una cocina familiar de Corozal, con la idea de llevar el sabor cálido del Caribe a cada mesa. Empezamos vendiendo empanadas los fines de semana y, poco a poco, la esquina se llenó de vecinos que volvían por el arroz con gandules, el mofongo y los jugos naturales.',
-  'Cada receta la cuidamos como el primer día: el sofrito se sofríe a fuego lento, la masa de las empanadas se hace a mano y los postres siguen las recetas de la abuela. No usamos atajos porque creemos que la comida más honesta es la que se siente como en casa.',
-  'Hoy atendemos de miércoles a domingo, pedimos con anticipación cuando el día se pone ocupado, y siempre guardamos una porción de amarillo para quien llega sonriendo.',
+  'Corozali nació del cariño por dos cosas: Corozal, el pueblo de Sucre que nos vio crecer, y Alicia, mi abuela, quien enseñó que la cocina es la mejor forma de querer. De ahí el nombre: Corozali, el sabor de Corozal con el alma de Ali.',
+  'En su cocina aprendimos que el sofrito hay que sofreírla a fuego lento, que la masa de las empanadas se amasa con paciencia y que los postres saben mejor cuando llevan receta de familia. No usamos atajos porque creemos que la comida más honesta es la que se siente como en casa.',
+  'Hoy atendemos de miércoles a domingo, pedimos con anticipación cuando el día se pone ocupado y siempre guardamos una porción de amarillo para quien llega sonriendo.',
 ]
 
 export const menuCategories: MenuCategory[] = [
@@ -229,10 +229,10 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const contactInfo: ContactInfo = {
-  address: 'Cartagena- Bolivar',
+  address: 'Corozal, Sucre, Colombia',
   phone: '3012631318',
-  email: 'hola@corozalibites.com (email de ejemplo — reemplazar por el real)',
-  mapsUrl: 'https://maps.google.com/?q=Cartagena,+Bolivar,+Colombia',
+  email: 'corozalicocina@gmail.com',
+  mapsUrl: 'https://maps.google.com/?q=Corozal,+Sucre,+Colombia',
 }
 
 export const socialLinks: SocialLink[] = [

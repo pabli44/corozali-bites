@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://corozali-bites.vercel.app/sitemap.xml
