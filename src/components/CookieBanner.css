@@ -1,0 +1,107 @@
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-top: 1px solid #e0d9ce;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cookie-banner-text {
+  max-width: 1100px;
+  margin: 0 auto 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.cookie-banner-link {
+  color: #6b4a2a;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.cookie-banner-actions {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.cookie-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+
+.cookie-banner-btn:hover,
+.cookie-banner-btn:focus-visible {
+  transform: translateY(-1px);
+}
+
+.cookie-banner-btn:focus-visible {
+  outline: 3px solid #8c6b4a;
+  outline-offset: 3px;
+}
+
+.cookie-banner-btn-primary {
+  background: #6b4a2a;
+  color: #ffffff;
+  border-color: #6b4a2a;
+}
+
+.cookie-banner-btn-primary:hover,
+.cookie-banner-btn-primary:focus-visible {
+  background: #4a331c;
+  border-color: #4a331c;
+}
+
+.cookie-banner-btn-secondary {
+  background: #f7f4ef;
+  color: #1a1a1a;
+  border-color: #e0d9ce;
+}
+
+.cookie-banner-btn-secondary:hover,
+.cookie-banner-btn-secondary:focus-visible {
+  background: #ece6dc;
+  border-color: #d6cfc3;
+}
+
+.cookie-banner-btn-ghost {
+  background: transparent;
+  color: #6b4a2a;
+  border-color: transparent;
+  text-decoration: underline;
+}
+
+.cookie-banner-btn-ghost:hover,
+.cookie-banner-btn-ghost:focus-visible {
+  background: #f7f4ef;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookie-banner-btn {
+    transition: none;
+  }
+
+  .cookie-banner-btn:hover,
+  .cookie-banner-btn:focus-visible {
+    transform: none;
+  }
+}
